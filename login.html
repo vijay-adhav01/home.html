@@ -7,22 +7,106 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
-
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        
         body{
-            display: grid;
-            place-items: center;
-            height: 97vh;
-            background-color: rgb(7, 134, 156);
+            padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+         box-sizing: border-box;
         }
+
+.wrapper{
+  background: #011936;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  margin-top: 0;
+  box-shadow: 2px 2px 2px #5fbff9,
+  -5px -5px 2px #fffafa;
+}
+.wrapper nav{
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 100px);
+  margin: 0 auto;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+  display: flex;
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 300px;
+  display: flex;
+  
+}
+.content .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.content .links li{
+  list-style: none;
+  line-height: 60px;
+  
+}
+.content .links li a{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.content .links li a:hover{
+  background: #3498db;
+}
+.wrapper .search-icon
+{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 40px;
+  width: 50px;
+  text-align: center;
+}
+
+.wrapper .search-icon{
+  margin-left: 50px;
+}
+
+
+
+nav .fa{
+  color: white;
+  margin-top: 0px;
+  font-size: 25px;
+  padding-right: 0px;
+}
+.icons>.search-icon{
+  margin-right: 50px;
+}
+
+
+
+
+/* Service Box End Here */
+
         .parent{
-            position: relative;
-            background-color: white;
+            position: absolute;
+            background-color: #3498db;
             width: 300px;
             min-height: 200px;
             padding: 20px;
             text-align: center;
+            margin-top: 200px;
+            margin-left: 750px;
             border-radius: 10px;
             /* border: 1px solid black; */
             box-shadow: 5px 5px 5px #c2bcbc,
@@ -50,6 +134,7 @@
         .sign-btn{
             width: 100%;
             border-radius: 10px;
+            background-color: white;
             /* border: 1px solid black; */
             box-shadow: 5px 5px 5px #90d4c6,
             -5px -5px 5px #90d4c6;
@@ -59,9 +144,10 @@
             width: 250px;
             border: none;
             outline: none;
-            background-color: transparent;
+            background-color: white;
             border-bottom: 2px solid gray;
             padding: 10px 20px 10px 20px;
+            border-radius: 10px;
         }
         #submit{
             width: 100%;
@@ -73,7 +159,7 @@
             -5px -5px 5px #c2bcbc; 
         }
         a{
-            color: darkcyan;
+            color: rgb(236, 242, 242);
         }
         a>p{
             text-align: left;
@@ -113,38 +199,37 @@
 <body>
 
 
-     <div class="wrapper">
-      <nav>
-        <div class="content">
-        <div class="logo"><a href="#">VIjay Adhav</a></div>
-          <ul class="links">
-            <li>
-              <a href="#">Home</a></li>
-            <li>
-              <a href="#" class="desktop-link">Engineering MCQ</a>
-            </li>
-            <li>
-              <a href="#" class="desktop-link">Programming MCQ</a>
-            </li>
-            <li>
-              <a href="#" class="desktop-link">MS Office MCQ</a>
-            </li>
-            <li>
-              <a href="#" class="desktop-link">General MCQ</a>
-            </li>
-            <li>
-              <a href="#" class="desktop-link">More</a>
-            </li>
-            
-          </ul>
-        </div>
-        <div class="icons">
-        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-        <a href="login.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></div>
-      </nav>
-    </div>
-
-    
+    <div class="wrapper">
+        <nav>
+          <div class="content">
+          <div class="logo"><a href="#">VIjay Adhav</a></div>
+            <ul class="links">
+              <li>
+                <a href="#">Home</a></li>
+              <li>
+                <a href="#" class="desktop-link">Engineering MCQ</a>
+              </li>
+              <li>
+                <a href="#" class="desktop-link">Programming MCQ</a>
+              </li>
+              <li>
+                <a href="#" class="desktop-link">MS Office MCQ</a>
+              </li>
+              <li>
+                <a href="#" class="desktop-link">General MCQ</a>
+              </li>
+              <li>
+                <a href="#" class="desktop-link">More</a>
+              </li>
+              
+            </ul>
+          </div>
+          <div class="icons">
+          <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></div>
+        </nav>
+      </div>
+  
         <div class="parent">
             <div class="sign-btn">
             <button id="LoginBtn">Log-In</button>
