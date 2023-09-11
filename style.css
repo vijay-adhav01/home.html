@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+body{
+background-color: #f4fffd;
+}
+
+.wrapper{
+  background: #011936;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 2px 2px 2px #5fbff9,
+  -5px -5px 2px #fffafa;
+}
+.wrapper nav{
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 100px);
+  margin: 0 auto;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+  display: flex;
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 300px;
+  display: flex;
+  
+}
+.content .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.content .links li{
+  list-style: none;
+  line-height: 60px;
+  
+}
+.content .links li a{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.content .links li a:hover{
+  background: #3498db;
+}
+.wrapper .search-icon
+{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 40px;
+  width: 50px;
+  text-align: center;
+}
+
+.wrapper .search-icon{
+  margin-left: 50px;
+}
+
+
+
+nav .fa{
+  color: white;
+  margin-top: 0px;
+  font-size: 25px;
+  padding-right: 0px;
+}
+.icons>.search-icon{
+  margin-right: 50px;
+}
+
+
+
+
+/* Service Box End Here */
+
+section>img{
+  width: 100%;
+  height: 560px;
+  border-bottom: 2px solid #011936;
+object-fit: cover;
+
+}
+
+.middle{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 25px;
+  width: 760px;
+  color: #171d1c;
+  height: 1000px;
+  background-color: transparent;
+  margin-left: 550px;
+  margin-top: -90px;
+  position: relative;
+
+ 
+
+}
+/* Computer engineering box li starts here */
+.computer{
+  padding: 25px;
+  border-radius: 18px;
+  background: #5fbff9;
+  box-shadow: 5px 5px 5px #c2bcbc,
+  -5px -5px 5px #fffafa;
+  
+}
+.ulcomputer{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding-top: 20px;
+  width: 700px;
+  
+
+}
+
+.computer_data li{
+  color: black;
+  padding:10px;
+  font-size: 16px;
+  border: 1px solid darkslategrey;
+  border-radius: 15px;
+  background: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+
+.computer_data li:hover{
+  background: #3498db;
+  color: white;
+}
+
+
+/* Computer engineering box li Ends here */
+
+
+
+
+/* Programming box li starts here */
+.Programming{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 25px;
+  border-radius: 18px;
+  background: #f06449;
+  box-shadow: 5px 5px 5px #c2bcbc,
+  -5px -5px 5px #fffafa;
+}
+.ul_programming{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding-top: 20px;
+  width: 700px;
+}
+.programming_data li{
+  color: black;
+  background-color: white;
+  padding:10px;
+  font-size: 16px;
+  border: 1px solid darkslategrey;
+  border-radius: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+}
+.programming_data li:hover{
+  background: #3498db;
+  color: white;}
+
+/* Programming box li Ends here */
+
+
+/* Office box li starts here */
+.office{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 25px;
+  border-radius: 18px;
+  background: #ed217c;
+  box-shadow: 5px 5px 5px #c2bcbc,
+  -5px -5px 5px #fffafa;
+}
+.ul_msoffice{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding-top: 20px;
+  width: 700px;
+}
+.msoffice_data li{
+  color: black;
+  background-color: white;
+  padding:10px;
+  font-size: 16px;
+  border: 1px solid darkslategrey;
+  border-radius: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+}
+.msoffice_data li:hover{
+  background: #3498db;
+  color: white;}
+
+/* Office box li Ends here */
+
+/* General box li starts here */
+.general{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 25px;
+  border-radius: 18px;
+  background: #ffe45e;
+  box-shadow: 5px 5px 5px #c2bcbc,
+  -5px -5px 5px #fffafa;
+}
+.ul_general{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding-top: 20px;
+  width: 700px;
+}
+.general_data li{
+  color: black;
+  background-color: white;
+  padding:10px;
+  font-size: 16px;
+  border: 1px solid darkslategrey;
+  border-radius: 15px;
+   font-weight: 500;
+  transition: all 0.3s ease;
+
+}
+.general_data li:hover{
+  background: #3498db;
+  color: white;}
+
+/* General box li Ends here */
+
+
+/* Footer Starts here */
+
+.footer{
+  width: 100%;
+  height: 130px;
+  /*background-image: linear-gradient(to bottom right, #662d8c, #614385);*/
+  background-color: #011936;
+  text-align: center;
+  margin-top: 50px;
+  border-top: 3px solid white;
+
+
+}
+
+footer .fa{
+  color: white;
+  margin-top: 35px;
+  font-size: 40px;
+  padding-right: 10px;
+  transition: all 0.3s ease;
+
+}
+footer .fa:hover{
+  color: #166faa;
+}
+
+footer ul li{
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: white;
+}
+footer ul li a{
+  color: white;
+  font-size: 15px;
+
+}
+
+/* footer Ends here */
